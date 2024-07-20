@@ -201,7 +201,7 @@ async function getCategoryMealsForHome(category) {
       `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`
     );
     let res = await response.json();
-    console.log(res.meals);
+    
     displayMealsHome(res.meals);
   }
 function displayMealsHome(data) {
