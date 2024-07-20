@@ -308,7 +308,7 @@ async function getMeal(id) {
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
   );
   let res = await respone.json();
-  console.log(res);
+
   displayMealDetails(res.meals[0]);
   $(".spinner").fadeOut(500)
 }
